@@ -15,6 +15,8 @@ html {
   --color-heading: #1b0760;
   --color-text-body: #918ca4;
   --color-icon-background: #f3f9fa;
+  --color-input-placeholder: #bab4ce;
+  --color-border: #ccc;
 }
 
 /* Typography */
@@ -245,6 +247,53 @@ a {
 
 @media screen and (min-width: 1024px) {
   .button {
+    font-size: 1.5rem;
+  }
+}
+
+/* Inputs */
+
+.input {
+  outline: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 60px;
+  font-size: 2rem;
+  padding: 1.5rem 2rem;
+  color: var(--color-heading);
+}
+
+::placeholder {
+  color: var(--color-input-placeholder);
+}
+
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: 60px;
+  display: flex;
+  box-shadow: 0 0 20px 10px #e6ebee;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  /* padding: 1rem 1.5rem; */
+}
+
+.input-group .button {
+  margin: 4px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.button .icon {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  margin-right: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
     font-size: 1.5rem;
   }
 }
