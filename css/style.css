@@ -409,3 +409,31 @@ a {
     font-size: 1.8rem;
   }
 }
+
+/* Media */
+
+.media {
+  display: flex;
+}
+
+.media__body {
+  margin: 0 2.5rem;
+}
+
+.media__image {
+  margin-top: 1.4rem;
+  fill: #237cf2;
+}
+
+.media__title {
+  margin: 0;
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.media__description {
+  width: 50ch;
+  color: #7b858b;
+  font-size: 2rem;
+  font-weight: 300;
+}
