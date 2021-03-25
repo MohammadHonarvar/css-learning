@@ -246,6 +246,11 @@ a {
   color: #fff;
 }
 
+.button--stretched {
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+
 @media screen and (min-width: 1024px) {
   .button {
     font-size: 1.5rem;
@@ -559,5 +564,65 @@ a {
     width: 64px;
     height: 64px;
     right: -32px;
+  }
+}
+
+/* Callouts */
+
+.callout {
+  color: #fff;
+  border-radius: 10px;
+}
+
+.callout__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.callout--primary {
+  background-color: var(--color-primary);
+  padding: 4rem 0;
+}
+
+.callout__content {
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.callout__content h2 {
+  margin-top: 0;
+  color: #fff;
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+
+.callout__content p {
+  font-size: 2.4rem;
+}
+
+.grid .button {
+  align-self: center;
+  justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+
+  .callout__content {
+    text-align: left;
+  }
+
+  .callout .button {
+    align-self: center;
+    justify-self: start;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .callout__content p {
+    font-size: 2rem;
   }
 }
