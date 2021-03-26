@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=fallback"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Moshify - Testimonial block component</title>
+  </head>
+  <body>
+    <section class="block">
+      <header class="block__header">
+        <h2 class="block__heading">What our Customer are Saying</h2>
+        <p class="testimonial__block-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+          nesciunt?
+        </p>
+      </header>
+      <div class="card testimonial">
+        <div class="grid grid--1x2">
+          <div class="testimonial__image-container">
+            <img
+              class="testimonial__image"
+              src="../images/testimonial.jpg"
+              alt="A happy and smiling customer"
+            />
+            <span class="icon-container testimonial__icon-container">
+              <svg class="icon testimonial__icon">
+                <use xlink:href="../images/sprite.svg#quotes"></use>
+              </svg>
+            </span>
+          </div>
+          <blockquote class="quote">
+            <p class="quote__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores
+              ut tempora id molestias earum distinctio, non ratione culpa
+              tenetur. Consequatur!
+            </p>
+            <footer>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon quote__line">
+                    <use xlink:href="../images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">Jhone Lumeo</h3>
+                  <p class="media__description quote__company">MHF Company</p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

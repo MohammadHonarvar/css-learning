@@ -709,6 +709,7 @@ a {
 
 .block__header {
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .container {
@@ -718,4 +719,16 @@ a {
 
 .block__header.container {
   margin: 0 auto;
+}
+
+/* Testimonial blocks */
+
+.testimonial__block-description {
+  font-size: 2.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial__block-description {
+    font-size: 2rem;
+  }
 }
