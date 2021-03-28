@@ -198,7 +198,7 @@ a {
   display: inline-block;
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem 3rem;
+  padding: 2rem 5vw;
   text-align: center;
   text-transform: uppercase;
   transition: background-color 0.15s;
@@ -271,6 +271,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .button {
+    padding: 2rem 3vw;
+  }
+}
+
 /* Inputs */
 
 .input {
@@ -278,7 +284,7 @@ a {
   border: 1px solid var(--color-border);
   border-radius: 60px;
   font-size: 2rem;
-  padding: 1.5rem 4rem;
+  padding: 1.5rem 4vw;
   color: var(--color-heading);
 }
 
@@ -295,6 +301,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
+  width: 0;
 }
 
 .input-group .button {
@@ -304,6 +311,12 @@ a {
 @media screen and (min-width: 1024px) {
   .input {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .input {
+    padding: 1.5rem 2vw;
   }
 }
 
@@ -1019,7 +1032,7 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   justify-items: center;
   font-size: 2rem;
