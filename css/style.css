@@ -333,6 +333,14 @@ a {
 
 /* plans */
 
+.plan {
+  /* will-change: transform; */
+  transition: transform 0.2s ease-out;
+}
+.plan:hover {
+  transform: scale(1.05);
+}
+
 .plan__name {
   color: #fff;
   font-size: 2.4rem;
@@ -394,6 +402,14 @@ a {
   position: absolute;
   top: -4px;
   right: 7%;
+}
+
+.plan--popular {
+  transform: scale(1.1);
+}
+
+.plan.plan--popular:hover {
+  transform: scale(1.15);
 }
 
 @media screen and (min-width: 1024px) {
@@ -515,11 +531,11 @@ a {
   }
 }
 
-/* @media screen and (min-width: 1440px) {
-  .grid--1x2 {
+@media screen and (min-width: 1440px) {
+  .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
   }
-} */
+}
 
 /* Testimonials */
 
@@ -1020,4 +1036,15 @@ a {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* Plans block */
+
+.block-plans .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
